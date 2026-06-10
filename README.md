@@ -11,7 +11,7 @@ only lightweight adaptation modules and classification heads, and uses an
 stabilize teacher updates with a drift-aware EMA (**LyapEMA**).
 
 <p align="center">
-  <img src="docs/overview.png" width="92%" alt="FlowMatch overview"/>
+  <img src="docs/FlowMatch.png" width="92%" alt="FlowMatch overview"/>
 </p>
 
 ---
