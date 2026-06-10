@@ -1,8 +1,7 @@
 # FlowMatch
 
 > **FlowMatch: Augmentation-Flow Semi-Supervised Adaptation of Vision Foundation Models**
-> Hongyang He, Yundi Hong, Daizong Liu, Runwei Guan, Pan Zhou, Hui Xiong, Victor Sanchez
-> *Under review at IEEE TPAMI.*
+
 
 FlowMatch is a **semi-supervised adaptation** framework for Vision Foundation
 Models (VFMs) such as CLIP and DINOv2. It freezes the VFM backbone, trains
@@ -194,26 +193,10 @@ Both are logged automatically when wandb is enabled (see `flowmatch.py`,
 
 ---
 
-## 9.  License & citation
-
-This code is released under the MIT License (see `LICENSE`).
-If you find FlowMatch useful in your research, please cite:
-
-```bibtex
-@article{he2026flowmatch,
-  title   = {FlowMatch: Augmentation-Flow Semi-Supervised Adaptation of
-             Vision Foundation Models},
-  author  = {He, Hongyang and Hong, Yundi and Liu, Daizong and Guan, Runwei
-             and Zhou, Pan and Xiong, Hui and Sanchez, Victor},
-  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence
-             (under review)},
-  year    = {2026},
-}
-```
 
 ---
 
-## 10.  Acknowledgements
+## 9.  Acknowledgements
 
 FlowMatch is built on top of the
 [USB](https://github.com/microsoft/Semi-supervised-learning) semi-supervised
