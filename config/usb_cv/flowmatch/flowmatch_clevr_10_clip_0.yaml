@@ -1,0 +1,84 @@
+algorithm: flowmatch
+save_dir: ./saved_models/usb_cv/
+save_name: flowmatch_clevr_10_clip_0
+resume: True
+load_path: ./saved_models/usb_cv/flowmatch_clevr_10_clip_0/latest_model.pth
+overwrite: True
+use_tensorboard: True
+use_wandb: True
+wandb_project: Flow_vs_Fix
+
+epoch: 200
+num_train_iter: 51200
+num_log_iter: 256
+num_eval_iter: 1024
+num_warmup_iter: 2048
+
+batch_size: 4
+eval_batch_size: 16
+uratio: 2
+ema_m: 0.999
+ulb_loss_ratio: 1.0
+
+optim: AdamW
+lr: 0.00002
+layer_decay: 0.65
+momentum: 0.9
+weight_decay: 0.0001
+amp: False
+clip_grad: 1.0
+use_cat: True
+
+net: clip_vit_base_patch16
+net_from_name: False
+use_pretrain: True
+pretrain_path: openai/clip-vit-base-patch16
+
+data_dir: ./data
+dataset: clevr
+num_classes: 8
+num_labels: 8
+train_sampler: RandomSampler
+num_workers: 4
+include_lb_to_ulb: True
+lb_imb_ratio: 1
+ulb_imb_ratio: 1
+ulb_num_labels:
+
+img_size: 224
+crop_ratio: 0.875
+
+hard_label: True
+T: 0.5
+p_cutoff: 0.95
+
+# FlowMatch trajectory params
+traj_steps: 5
+traj_n_ops: 2
+lambda_cons: 0.1
+lyap_enable: True
+lyap_gamma: 0.02
+lyap_lambda: 0.0
+
+# Legacy flags (all off)
+a1_enable: False
+a2_enable: False
+a3_enable: False
+a3_warmup_iter: 20000
+a3_mix_ratio: 0.2
+a3_ramp_iter: 30000
+a4_enable: False
+a41_enable: False
+lambda_a41_traj: 0.5
+a32_enable: False
+traj_drop_max: 0.3
+traj_noise_max: 0.06
+traj_jitter_max: 0.2
+freeze_traj_bn: False
+seed: 0
+world_size: 1
+rank: 0
+multiprocessing_distributed: True
+dist_url: tcp://127.0.0.1:10054
+dist_backend: nccl
+gpu: None

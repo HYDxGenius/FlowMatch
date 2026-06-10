@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.env/
+.venv/
+venv/
+build/
+dist/
+
+# Training artefacts (must never be committed)
+saved_models/
+logs/
+wandb/
+tensorboard/
+checkpoints/
+*.pth
+*.tar
+*.tar.gz
+
+# Datasets (downloaded at first run)
+data/
+datasets/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

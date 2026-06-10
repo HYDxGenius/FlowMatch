@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "FlowMatch: Augmentation-Flow Semi-Supervised Adaptation of Vision Foundation Models"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "He"
+    given-names: "Hongyang"
+  - family-names: "Hong"
+    given-names: "Yundi"
+  - family-names: "Liu"
+    given-names: "Daizong"
+  - family-names: "Guan"
+    given-names: "Runwei"
+  - family-names: "Zhou"
+    given-names: "Pan"
+  - family-names: "Xiong"
+    given-names: "Hui"
+  - family-names: "Sanchez"
+    given-names: "Victor"
+year: 2026
+url: "https://github.com/HYDxGenius/FlowMatch"
+license: MIT
